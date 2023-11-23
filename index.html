@@ -1,0 +1,176 @@
+<!-- 
+
+    *
+   * *
+  * * *
+ * * * *
+ 
+ ******
+ *    *
+ ******
+ *    *
+ *    *
+ 
+ ******
+ *    *
+ *    *
+ ******
+ 
+ document.write()
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern</title>
+  </head>
+  <body>
+    <script>
+      for (row = 0; row < 4; row++) {
+        for (col = 0; col < 6; col++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+      for (row = 0; row < 6; row++) {
+        for (col = 0; col <= 5; col++) {
+          if (
+            ((col == 0) & (row < 5)) |
+            ((row == 0) & (col < 4)) |
+            ((col == 4) & (row < 5)) |
+            ((row == 3) & (col < 4))
+          ) {
+            document.write("*");
+          } else {
+            document.write("&nbsp; ");
+          }
+        }
+        document.write("<br/>");
+      }
+
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+
+      for (row = 1; row < 5; row++) {
+        for (col = 1; col < 5; col++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+
+      for (i = 5; i > -1; i--) {
+        for (j = 0; j < 5; j++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+
+      for (j = 1; j <= 5; j++) {
+        for (i = 5; i >= j; i--) {
+          document.write("*");
+        }
+        document.write("</br>");
+      }
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+
+      for (i = 1; i <= 5; i++) {
+        for (j = 0; j <= 6; j++) {
+          document.write("*");
+        }
+        document.write("<br/>");
+      }
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+      for (row = 0; row < 7; row++) {
+        for (col = 0; col <= 7; col++) {
+          if (
+            ((col == 0) & (row < 7)) |
+            ((row == 0) & (col < 5)) |
+            ((col == 4) & (row <= 3)) |
+            ((row == 3) & (col < 4))
+          ) {
+            document.write("*");
+          } else {
+            document.write("&nbsp; ");
+          }
+        }
+        document.write("<br/>");
+      }
+      document.write(
+        "---------------------------------------------------</br>"
+      );
+      for (j = 0; j <= 5; j++) {
+        for (s = 0; s <= j - 1; s++) {
+          document.write("&nbsp;" + i + "&nbsp;");
+        }
+        document.write("<br/>");
+      }
+
+      "---------------------------------------------------</br>"
+
+      for(j=1; j<=5;j++){
+        for(s=5; s>=j; s--){
+          document.write("&nbsp;&nbsp;");
+        }
+        for(i=1; i<=5; i++) {
+          document.write("*");
+
+        }
+        document.write("<br/>");
+      }
+      "---------------------------------------------------</br>"
+      //   col==0 & min 4
+      // row=0 & min3
+      // col=3 & min 4
+      // row=4 & min3
+      //   document.write('--------------------------------------<br/>');
+      //   for(row=0;row<6;row++){
+      //       for(col=0; col<8; col++){
+      //           document.write('*')
+      //         //   if((col==0 & row<5))
+      //       }
+      //       document.write("<br/>");
+
+      // }
+      //   for(row=0; row<6; row++){
+      //       for (col=0;col<5; col++){
+      //       document.write('*')
+      //       if((col==0 & row<5)  | (row==0 & col<4) | (col==3 & row<5) | ( row==4 & col<4) )){
+      //          document.write('*')
+      //       }
+      //        else{
+      //           document.write('&nbsp;&nbsp;')
+      //       }
+
+      // }
+      //   document.write('<br/>')
+
+      //  }
+      //   document.write('--------------------------------------<br/>');
+
+      //      for(row=0;row<5;row++){
+      //         for(col=0;col<5;col++){
+      //             if(col==0 | col==4 | (row-col==0 * row<2))
+      //         }
+      //      }
+    </script>
+  </body>
+</html>
